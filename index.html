@@ -7,42 +7,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            background:url('https://c0.wallpaperflare.com/preview/390/349/275/south-africa-cape-town-simon-s-town-blue.jpg')no-repeat;
-            background-size:cover;
-
-            
+            background: url('https://c0.wallpaperflare.com/preview/390/349/275/south-africa-cape-town-simon-s-town-blue.jpg') no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         .logbox {
-            position: absolute;
             height: 450px;
             width: 400px;
             display: flex;
             background: rgba(189, 117, 117, 0.144);
-            box-shadow: 0 16px 21px rgba(50, 50, 50, 187);
-            margin-left: 35%;
-            margin-top: 3%;
-            overflow: hidden;
+            box-shadow: 0 16px 21px rgba(50, 50, 50, 0.5);
             justify-content: center;
             align-items: center;
             border-radius: 20px;
+            flex-direction: column;
         }
         .h4 {
-            position: absolute;
-            padding: 10px 10px;
-            font-size: 15px;
-            width: 30%;
-            height: 15px;  
-            margin-left: 20%;
-            background-color: rgb(200, 251, 247);
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgb(200, 251, 247,0.4);
             border: 1px solid black;
             border-radius: 10px;
             text-align: center;
-            outline: 1px solid black;
+            width: 90%;
+            margin-bottom: 20px;
         }
         .input-box {
             position: relative;
             width: 330px;
-            margin: 30px 0;
+            margin: 20px 0;
             border-bottom: 2px solid black;
         }
         .input-box label {
@@ -69,6 +66,7 @@
             font-size: medium;
             display: flex;
             justify-content: space-between;
+            width: 330px;
         }
         .remfor label input {
             margin-right: 3px;
@@ -86,7 +84,6 @@
             height: 40px;
             background: rgb(200, 251, 247);
             border: 2px solid black;
-            outline: none;
             border-radius: 10px;
             color: black;
             cursor: pointer;
@@ -97,9 +94,7 @@
             font-size: 15px;
             color: black;
             text-align: center;
-            margin: 25px 0 10px;
-            display: flex;
-            justify-content: space-between;
+            margin: 20px 0 10px;
         }
         .newreg a {
             color: rgb(6, 6, 6);
@@ -114,13 +109,13 @@
 <body>
     <div class="logbox">
         <form action="">
-            <b><div class="h4">Login</div></b>
+            <div class="h4">Login</div>
             <div class="input-box">
-                <label><b><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;E-mail ID</b></label><br>
+                <label><b><i class="fa-regular fa-envelope"></i>&nbsp;E-mail ID</b></label><br><br>
                 <input type="email" required placeholder="Enter email">
             </div>
             <div class="input-box">
-                <label><b><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;Password</b></label><br>
+                <label><b><i class="fa-solid fa-lock"></i>&nbsp;Password</b></label><br><br>
                 <input type="password" id="password" placeholder="Enter password">
             </div>
             <div class="remfor">
